@@ -42,10 +42,10 @@ a {
 }
 
 .section__blog {
-  background-image: url(../img/background.jpg);
+  background-image: url(/img/background.jpg);
 }
 .section__me {
-  background-image: url(../img/peter_bg.jpg);
+  background-image: url(/img/peter_bg.jpg);
 }
 .about__me p {
   line-height: .01;
