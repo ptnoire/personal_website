@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "name": "pt-website",
+  "version": "1.0.0",
+  "description": "Business Website for PT Anderson",
+  "main": "peterJS.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptnoire/personal_website"
+  },
+  "author": "PT Anderson",
+  "license": "ISC"
+}
