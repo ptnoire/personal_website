@@ -13,15 +13,6 @@ body {
   background-image: url(./img/background2.jpg);
 }
 
-pre code {
-  background-color: rgb(40, 40, 40);
-  border: 1px solid #999;
-  display: block;
-  padding: 1vh 1vw;
-  font-size: 3vw;
-  overflow-x: scroll;
-}
-
 a {
   text-decoration: none;
 }
@@ -155,10 +146,19 @@ a {
 
 /* PHONE SETTINGS */
 @media only screen and (max-width: 600px) {
+  pre code {
+    background-color: rgb(40, 40, 40);
+    border: 1px solid #999;
+    display: block;
+    padding: 1vh 1vw;
+    font-size: 3vw;
+    overflow-x: scroll;
+  }
+
   .bodyText {
     padding-top: 50px;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
   }
 
   .welcome__sign h2 {
@@ -290,6 +290,13 @@ a {
 
 /* BROWSER SETTINGS / HORIZONTAL PHONE */
 @media screen and (min-width: 600px) {
+  pre code {
+    background-color: rgb(40, 40, 40);
+    border: 1px solid #999;
+    display: block;
+    padding: 1vh 1vw;
+  }
+
   .bodyText {
     padding-left: 1vw;
     margin-left: 15%;

@@ -13,15 +13,6 @@ body {
   background-image: url("background2.768edc10.jpg");
 }
 
-pre code {
-  background-color: #282828;
-  border: 1px solid #999;
-  padding: 1vh 1vw;
-  font-size: 3vw;
-  display: block;
-  overflow-x: scroll;
-}
-
 a {
   text-decoration: none;
 }
@@ -157,9 +148,18 @@ iframe {
 }
 
 @media only screen and (max-width: 600px) {
+  pre code {
+    background-color: #282828;
+    border: 1px solid #999;
+    padding: 1vh 1vw;
+    font-size: 3vw;
+    display: block;
+    overflow-x: scroll;
+  }
+
   .bodyText {
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     padding-top: 50px;
   }
 
@@ -291,6 +291,13 @@ iframe {
 }
 
 @media screen and (min-width: 600px) {
+  pre code {
+    background-color: #282828;
+    border: 1px solid #999;
+    padding: 1vh 1vw;
+    display: block;
+  }
+
   .bodyText {
     margin-left: 15%;
     margin-right: 15%;
