@@ -39,7 +39,7 @@
                 <h3 class="contentDate">February 3rd, 2023</h3>
                 <h2 class="contentTitle">Update DOM Algorithm</h2>
                 <p>I've learned a lot over the past couple months when it comes to DOM manipulation. This was the first time I'd ever used a few of these built in features and done something that cuts down the memory usage of the website when updating elements on the page.</p><br>
-                <p>Long story short (which I want to go in-depth but won't here) [createRange().createContextualFragment()] is creating a virtual DOM so that I can compare the nodes to the current DOM, then using a conditional statement we will change the text content only if the node has a value of textcontent [nodeValue], then just below I'm specifically updating a dataset attribute used to modify the page's values from another feature. Do you think this is cool? I think in a large scale application it maybe a bit much but for this specific project is was really fancy.</p>
+                <p>Long story short (which I want to go in-depth but won't here) createRange() .createContextualFragment() is creating a virtual DOM so that I can compare the nodes to the current DOM, then using a conditional statement we will change the text content only if the node has a value of textcontent [nodeValue], then just below I'm specifically updating a dataset attribute used to modify the page's values from another feature. Do you think this is cool? I think in a large scale application it maybe a bit much but for this specific project is was really fancy.</p>
                 <pre>
                     <code>
     update(data) {
@@ -123,21 +123,26 @@
         </div>
     </section>
     <section class="section section__me">
-        <h2>introducing me.</h2>
-        <div class="about__me">
-            <h3>Front End Developer</h3>
-            <p>HTML | CSS | JavaScript</p>
-            <p>JSON | AJAX | Node.js</p>
-            <p>Parcel | Babel</p>
-        </div>
-        <div class="dot__img__section">
-            <!-- <img class="dot__img" src="" alt=""> -->
-                <div class="dot__bucket">
-                    <div class="dot" data-id="1"></div>
-                    <div class="dot" data-id="2"></div>
-                    <div class="dot" data-id="3"></div>
-                    <div class="dot" data-id="4"></div>
+        <h2 class="section__me_title">introducing me.</h2>
+        <div class="about__me bodyText">
+            <img class="profile_pic" src="./img/peter_3.jpg" alt="Peter3">
+            <div class="profile__card">
+                <h2 class="profile__title">Front End Developer</h2>
+                <div class="profile_headline">
+                    <img src="./img/htmllogo.png" alt="">
+                    <img src="./img/csslogo.png" alt="">
+                    <img src="./img/jslogo.png" alt="">
+                    <img src="./img/pythonlogo.png" alt="">
+                    <img src="./img/babellogo.png" alt="">
+                    <img src="./img/nodelogo.png" alt="">
                 </div>
+                <p>For almost two decades I've been fixing orchestral instruments & working with the community to keep music and the arts thriving. I have worked all across North America and with some of the top rated music stores in the country. After hours between raising a family and being active in the local programs, I developed a new passion for coding.</p><br>
+                <p>At first this started as a way to provide more to the volunteer work I was a part of but it quickly became a joy of mine as I delved into the world of web development.</p>
+                <p>Only thing left to do is find out how I can be of service to you and your grand plan.</p>
+                <p>Cheers!</p>
+            </div>
+
+
         </div>
     </section>
     <section class="section section__projects">

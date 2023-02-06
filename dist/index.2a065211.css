@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: Spartan, sans-serif;
+  overflow-x: hidden;
 }
 
 .historyPage {
@@ -16,7 +17,9 @@ pre code {
   background-color: #282828;
   border: 1px solid #999;
   padding: 1vh 1vw;
+  font-size: 3vw;
   display: block;
+  overflow-x: scroll;
 }
 
 a {
@@ -49,13 +52,13 @@ a {
   background-image: url("peter_bg.856cce05.jpg");
 }
 
-.about__me p {
-  text-align: center;
-  font-size: 2vw;
-  line-height: .01;
+.profile_headline {
+  border-color: #fbe6e626;
+  border-bottom-style: inset;
+  display: inline-block;
 }
 
-.section__me h2 {
+.section__me_title {
   text-align: center;
   color: beige;
   background-image: linear-gradient(to top left, #e60d0d80, #f48bdf);
@@ -130,6 +133,16 @@ a {
   line-height: .15px;
 }
 
+.profile__card {
+  box-sizing: border-box;
+  color: #fff3e4;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #000, #312e2ee6);
+  border-color: #faebd7;
+  border-left-style: inset;
+  border-right-style: inset;
+}
+
 .videoWrapper {
   padding-bottom: 56.25%;
   position: relative;
@@ -170,8 +183,39 @@ iframe {
     padding-bottom: 30vh;
   }
 
-  .section__me h2 {
-    font-size: 3vh;
+  .section__me_title {
+    font-size: 11vw;
+  }
+
+  .profile_pic {
+    width: 60vw;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 50%;
+    margin-left: 15%;
+  }
+
+  .profile__title {
+    text-align: center;
+    border-color: #fbe6e626;
+    border-bottom-style: inset;
+    padding-top: 15px;
+    font-size: 10vw;
+  }
+
+  .profile_headline img {
+    height: 12vw;
+    padding-bottom: 2vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+  }
+
+  .profile__card {
+    width: 100%;
+    opacity: 1;
+    margin: 2.5vh .15vw 1vh;
+    padding: 1vh 3vw;
+    transition: all 1s;
   }
 
   .vertical {
@@ -315,36 +359,44 @@ iframe {
     padding-bottom: 40vh;
   }
 
-  .section__me h2 {
-    color: beige;
-    text-align: center;
-    padding-left: 10vw;
-    font-size: 10vw;
+  .section__me_title {
+    font-size: 8vw;
   }
 
-  .dot {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-color: #0ff;
-    border-radius: 25%;
-    transition: all 1s;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-  }
-
-  .dot__img__section {
-    width: 50%;
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  .dot__img {
-    width: 100%;
+  .profile_pic {
+    width: 15vw;
     height: auto;
-    border-radius: 25%;
-    transition: all 1s;
+    border-radius: 30%;
+    margin-left: 2vw;
+    position: absolute;
+  }
+
+  .profile__card {
+    max-width: 1000px;
+    opacity: 1;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin: 2.5vh 1vw 1vh 12vw;
+    padding: 1vh 1vw;
+    transition: all 1.5s;
+  }
+
+  .profile__card p {
+    line-height: 2vh;
+  }
+
+  .profile__title {
+    text-align: center;
+    border-color: #fbe6e626;
+    border-bottom-style: inset;
+    font-size: 3vw;
+  }
+
+  .profile_headline img {
+    height: 5vw;
+    padding-bottom: 2vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
   }
 
   .vertical {

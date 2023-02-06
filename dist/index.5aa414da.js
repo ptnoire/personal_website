@@ -22,14 +22,6 @@ contentCards.forEach((card)=>{
     card.classList.add("no__width");
     observer.observe(card);
 });
-const dotBucket = document.querySelector(".dot__img__section");
-const dotImg = document.querySelector(".dot__img");
-const dotImgTransform = function(e) {
-    const link = e.target;
-    console.log(link);
-    if (link.classList.contains("dot")) dotImg.src = "../img/peter_1.jpg";
-};
-dotBucket.addEventListener("click", dotImgTransform);
 document.querySelector(".welcome__nav").addEventListener("click", function(e) {
     e.preventDefault();
     if (e.target.classList.contains("nav__link")) {

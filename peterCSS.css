@@ -6,6 +6,7 @@
 body {
   margin: 0px;
   font-family: 'Spartan', sans-serif;
+  overflow-x: hidden;
 }
 
 .historyPage {
@@ -17,6 +18,8 @@ pre code {
   border: 1px solid #999;
   display: block;
   padding: 1vh 1vw;
+  font-size: 3vw;
+  overflow-x: scroll;
 }
 
 a {
@@ -47,12 +50,14 @@ a {
 .section__me {
   background-image: url(./img/peter_bg.jpg);
 }
-.about__me p {
-  line-height: .01;
-  text-align: center;
-  font-size: 2vw;
+.profile_headline {
+  display: inline-block;
+  /* margin-left: 15%; */
+  border-bottom-style: inset;
+  border-color: rgba(251, 230, 230, 0.15);
 }
-.section__me h2 {
+
+.section__me_title {
   background-image: linear-gradient(to top left, rgba(230, 13, 13, .5), rgb(244, 139, 223));
   text-align: center;
   color: beige;
@@ -114,6 +119,7 @@ a {
   color: rgb(255, 243, 228);
 }
 
+
 .contentCard img {
   height: 100%;
   width: 100%;
@@ -123,6 +129,16 @@ a {
   text-align: right;
   font-size: 1.5vh;
   line-height: .15px;
+}
+
+.profile__card {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(49, 46, 46, 0.90));
+  box-sizing: border-box;
+  border-right-style: inset;
+  border-left-style: inset;
+  border-color: antiquewhite;
+  color: rgb(255, 243, 228);
+  text-align: center;
 }
 
 .videoWrapper {
@@ -164,8 +180,40 @@ a {
     padding-bottom: 30vh;
   }
 
-  .section__me h2 {
-    font-size: 3vh;
+  .section__me_title {
+    font-size: 11vw;
+  }
+
+  .profile_pic {
+    margin-left: 15%;
+    width: 60vw;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+
+  .profile__title {
+    padding-top: 15px;
+    font-size: 10vw;
+    border-bottom-style: inset;
+    border-color: rgba(251, 230, 230, 0.15);
+    text-align: center;
+  }
+  .profile_headline img {
+    height: 12vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-bottom: 2vw;
+  }
+  .profile__card {
+    width: 100%;
+    padding: 1vh 3vw 1vh 3vw;
+    margin-left: .15vw;
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+    margin-right: .15vw;
+    opacity: 1;
+    transition: 1s;
   }
 
   .vertical {
@@ -315,36 +363,44 @@ a {
     padding-bottom: 40vh;
   }
 
-  .section__me h2 {
-    padding-left: 10vw;
-    font-size: 10vw;
-    color: beige;
+  .section__me_title {
+    font-size: 8vw;
+  }
+
+  .profile_pic {
+    position: absolute;
+    margin-left: 2vw;
+    width: 15vw;
+    height: auto;
+    border-radius: 30%;
+  }
+
+  .profile__card {
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    max-width: 1000px;
+    margin-left: 12vw;
+    padding: 1vh 1vw 1vh;
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    opacity: 1;
+    transition: 1.5s;
+  }
+  .profile__card p {
+    line-height: 2vh;
+  }
+  .profile__title {
+    font-size: 3vw;
+    border-bottom-style: inset;
+    border-color: rgba(251, 230, 230, 0.15);
     text-align: center;
   }
-
-  .dot {
-    display: inline-block;
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
-    border-radius: 25%;
-    top: 50%;
-    left: 50%;
-    transition: 1s;
-  }
-  
-  .dot__img__section {
-    margin: auto;
-    width: 50%;
-    max-width: 1000px;
-  }
-
-  .dot__img {
-    border-radius: 25%;
-    transition: 1s;
-    width: 100%;
-    height: auto;
+  .profile_headline img {
+    height: 5vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-bottom: 2vw;
   }
 
   .vertical {
