@@ -5,7 +5,7 @@
   "name": "pt-website",
   "version": "1.0.0",
   "description": "Business Website for PT Anderson",
-  "main": "peterJS.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
