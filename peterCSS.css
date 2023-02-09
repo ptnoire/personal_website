@@ -501,7 +501,8 @@ a {
 }
 
 .no__width {
-  border-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
 }
  
 .highlight {
