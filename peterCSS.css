@@ -471,6 +471,14 @@ a {
     color: beige;
   }
 
+  .btn--inline {
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(255, 255, 255, 0.293);
+    border-radius: 10%;
+    font-size: .5vw;
+    color: beige;
+  }
+
   .condense {
     transition: 1s;
     opacity: .8;

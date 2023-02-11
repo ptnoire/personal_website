@@ -53,7 +53,7 @@ const clear = function(parentContainer) {
     parentContainer.innerHTML = ''
 }
 
-const renderData = async function(data, pageNum = gitHubList.page) {
+const renderData = function(data, pageNum = gitHubList.page) {
     gitHubList.results = data.map(ele => { 
         const { full_name, html_url, description, updated_at, clone_url } = ele;
         return {
@@ -97,7 +97,7 @@ const changePagination = function() {
 
     if (curPage === 1 && numPages > 1) {
         return `
-        <button data-goto="${curPage + 1}" class="btn--inline pagination__btn--next">
+        <button data-goto="${curPage + 1}" class="btn--inline btn--next">
              <h2>Page ${curPage + 1}➡</h2>
         </button>
         `
@@ -105,7 +105,7 @@ const changePagination = function() {
 
     if(curPage === numPages && numPages > 1) {
         return `
-        <button data-goto="${curPage - 1}" class="btn--inline pagination__btn--prev">
+        <button data-goto="${curPage - 1}" class="btn--inline btn--prev">
             <h2>⬅ Page ${curPage - 1}</h2>
         </button>
         `;
@@ -113,10 +113,10 @@ const changePagination = function() {
 
     if(curPage < numPages) {
         return `
-        <button data-goto="${curPage - 1}"  class="btn--inline pagination__btn--prev">
+        <button data-goto="${curPage - 1}"  class="btn--inline btn--prev">
             <h2>⬅ Page ${curPage - 1}</h2>
         </button>
-        <button data-goto="${curPage + 1}" class="btn--inline pagination__btn--next">
+        <button data-goto="${curPage + 1}" class="btn--inline btn--next">
             <h2>Page ${curPage + 1}➡</h2>
         </button>
         `;
