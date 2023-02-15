@@ -74,6 +74,7 @@ a {
   border-left-style: inset;
   border-color: antiquewhite;
   color: rgb(255, 243, 228);
+  box-shadow: 0 10px 10px -4px lightblue;
 }
 
 
@@ -139,6 +140,7 @@ a {
     color: beige;
     padding: .5vw;
     background-image: linear-gradient(to top left, rgb(230, 13, 13), rgb(244, 139, 223));
+    box-shadow: 0 5px 5px -4px rgb(35, 35, 35);
   }
 
   .section__me {
@@ -244,9 +246,11 @@ a {
   }
   
   .project__list li {
+    list-style: upper-roman;
     border: 1px solid black;
     margin-top: 10px;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.526));
+    box-shadow: 0 10px 10px -4px rgb(35, 35, 35);
   }
   
   .project__list h2 {
@@ -265,6 +269,17 @@ a {
     font-size: 3vw;
     margin-left: 2vw;
     color: #e63946;
+  }
+
+  .btn--inline {
+    background-color: rgb(39, 39, 39);
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #b20808, #c84141);
+    font-size: 2vw;
+    color: beige;
+    box-shadow: 0 10px 10px -4px rgb(35, 35, 35);
   }
   
   .gitHub__item {
@@ -438,9 +453,11 @@ a {
   }
   
   .project__list li {
+    list-style: none;
     border: 1px solid black;
     margin-top: 10px;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.526));
+    box-shadow: 0 10px 10px -4px rgb(35, 35, 35);
   }
   
   .project__list h2 {
@@ -473,10 +490,13 @@ a {
 
   .btn--inline {
     background-color: rgb(39, 39, 39);
-    border: 1px solid rgba(255, 255, 255, 0.293);
-    border-radius: 10%;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #b20808, #c84141);
     font-size: .5vw;
     color: beige;
+    box-shadow: 0 12px 12px -4px rgb(35, 35, 35);
   }
 
   .condense {
