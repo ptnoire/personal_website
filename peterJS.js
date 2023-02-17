@@ -97,7 +97,7 @@ const changePagination = function() {
 
     if (curPage === 1 && numPages > 1) {
         return `
-        <button data-goto="${curPage + 1}" class="btn--inline btn--next">
+        <button data-goto="${curPage + 1}" class="btn--inline">
              <h2>Page ${curPage + 1}➡</h2>
         </button>
         `
@@ -105,7 +105,7 @@ const changePagination = function() {
 
     if(curPage === numPages && numPages > 1) {
         return `
-        <button data-goto="${curPage - 1}" class="btn--inline btn--prev">
+        <button data-goto="${curPage - 1}" class="btn--inline">
             <h2>⬅ Page ${curPage - 1}</h2>
         </button>
         `;
@@ -113,10 +113,10 @@ const changePagination = function() {
 
     if(curPage < numPages) {
         return `
-        <button data-goto="${curPage - 1}"  class="btn--inline btn--prev">
+        <button data-goto="${curPage - 1}"  class="btn--inline">
             <h2>⬅ Page ${curPage - 1}</h2>
         </button>
-        <button data-goto="${curPage + 1}" class="btn--inline btn--next">
+        <button data-goto="${curPage + 1}" class="btn--inline">
             <h2>Page ${curPage + 1}➡</h2>
         </button>
         `;
